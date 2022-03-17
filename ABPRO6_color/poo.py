@@ -1,6 +1,17 @@
 import datetime
 import dalecolor as dc
 
+# Agregar una clase Proveedor con los siguientes atributos:
+# ● RUT 
+# ● Nombre Legal
+# ● Razón Social
+# ● País
+# ● Una distinción entre persona jurídica o persona natural
+# A las clases creadas en la actividad anterior, incorpore un atributo opcional a cada una. 
+# Al momento de instanciar un objeto de la clase Producto, deberá existir una Composición con la clase 
+# Proveedor
+#  https://pediaa.com/wp-content/uploads/2019/01/Difference-Between-Aggregation-and-Composition-Comparison-Summary-1.jpg
+
 class Proveedor:
     def __init__(self, nombre, RUT, nombre_legal, razon_social, pais, persona):
         self.nombre = nombre
@@ -9,6 +20,7 @@ class Proveedor:
         self.razon_social = razon_social
         self.pais = pais
         self.persona = persona
+
 
 
 class Cliente:
